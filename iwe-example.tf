@@ -175,6 +175,11 @@ module "hx" {
       name    = "test-108"
       vlan_id = 108
       description = "Additional VLAN created by Terraform post Deployment"
+    },
+    {
+      name    = "vm-28"
+      vlan_id = 28
+      description = "For Gas- created by Terraform post Deployment"
     }
   ]
 }
