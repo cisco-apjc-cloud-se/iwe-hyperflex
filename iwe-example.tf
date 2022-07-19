@@ -30,7 +30,7 @@ module "hx" {
   source = "github.com/terraform-cisco-modules/terraform-intersight-hx"
 
   ### COMMON SETTINGS ###
-  action              = "Deploy" # Validate, Deploy, Continue, Retry, Abort, Unassign, No-op
+  action              = "No-op" # Validate, Deploy, Continue, Retry, Abort, Unassign, No-op
   wait_for_completion = false
   organization        = "default"
   tags                = []
@@ -69,15 +69,15 @@ module "hx" {
   nodes = {
     WZP23470VYT = {
       cluster_index = 1
-      # node_role = "Storage"
+      node_role = "Storage"
     }
     WZP23470VYJ = {
       cluster_index = 2
-      # node_role = "Storage"
+      node_role = "Storage"
     }
     WZP23470VYE = {
       cluster_index = 3
-      # node_role = "Storage"
+      node_role = "Storage"
     }
   }
 
