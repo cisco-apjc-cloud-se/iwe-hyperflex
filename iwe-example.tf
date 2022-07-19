@@ -25,12 +25,12 @@ provider "intersight" {
 
 ### HYPERFLEX CLUSTER PROVISIONING MODULE ###
 module "hx" {
-  # source  = "terraform-cisco-modules/hx/intersight"
-  # version = "1.0.5"
-  source = "github.com/terraform-cisco-modules/terraform-intersight-hx"
+  source  = "terraform-cisco-modules/hx/intersight"
+  version = "1.0.6"
+  # source = "github.com/terraform-cisco-modules/terraform-intersight-hx"
 
   ### COMMON SETTINGS ###
-  action              = "No-op" # Validate, Deploy, Continue, Retry, Abort, Unassign, No-op
+  action              = "Deploy" # Validate, Deploy, Continue, Retry, Abort, Unassign, No-op
   wait_for_completion = false
   organization        = "default"
   tags                = []
