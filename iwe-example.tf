@@ -163,8 +163,8 @@ module "hx" {
     name                    = "tf-iwe-sw-version"
     description             = "HX IWE cluster software version policy created by Terraform"
     server_firmware_version = "4.2(1i)"
-    hypervisor_version      = "1.2(1a)"
-    hxdp_version            = "4.5(2b)"
+    hypervisor_version      = "1.3(1b)"
+    hxdp_version            = "5.0(1b)"
   }
 
   ### ADDITIONAL (DAY 2) VM NETWORK VLANS ###
