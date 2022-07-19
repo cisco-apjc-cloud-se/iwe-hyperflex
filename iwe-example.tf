@@ -68,12 +68,15 @@ module "hx" {
   nodes = {
     WZP23470VYT = {
       cluster_index = 1
+      node_role = "Storage"
     }
     WZP23470VYJ = {
       cluster_index = 2
+      node_role = "Storage"
     }
     WZP23470VYE = {
       cluster_index = 3
+      node_role = "Storage"
     }
   }
 
