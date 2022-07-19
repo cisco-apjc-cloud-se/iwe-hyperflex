@@ -170,7 +170,7 @@ module "hx" {
   ### ADDITIONAL (DAY 2) VM NETWORK VLANS ###
   # NOTE:
   # - The name will be converted to lower case if not below.
-  cluster_deployed = true
+  cluster_deployed = false
   additional_vm_network_vlans = [
     {
       name    = "test-108"
