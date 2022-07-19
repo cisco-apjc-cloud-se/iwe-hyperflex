@@ -25,7 +25,7 @@ provider "intersight" {
 
 ### HYPERFLEX CLUSTER PROVISIONING MODULE ###
 module "hx" {
-  source  = "cisco-apjc-cloud-se/hx/intersight"
+  source  = "terraform-cisco-modules/hx/intersight"
   version = "1.0.5"
 
   ### COMMON SETTINGS ###
