@@ -30,7 +30,7 @@ module "hx" {
   # source = "github.com/terraform-cisco-modules/terraform-intersight-hx"
 
   ### COMMON SETTINGS ###
-  action              = "Deploy" # Validate, Deploy, Continue, Retry, Abort, Unassign, No-op
+  action              = "No-op" # Validate, Deploy, Continue, Retry, Abort, Unassign, No-op
   wait_for_completion = false
   organization        = "default"
   tags                = []
@@ -174,7 +174,7 @@ module "hx" {
   ### ADDITIONAL (DAY 2) VM NETWORK VLANS ###
   # NOTE:
   # - The name will be converted to lower case if not below.
-  cluster_deployed = false
+  cluster_deployed = true
   additional_vm_network_vlans = [
     {
       name    = "test-108"
